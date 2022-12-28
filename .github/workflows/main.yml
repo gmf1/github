@@ -19,12 +19,12 @@ on:
       testFolderPath:
         # passticket input from the user.
         description: Test Location Path
-        default: "C:\\Users\\aasati\\Compuware\\Workbench\\workspace\\CLI_CWKTCOBX\\Tests\\Scenarios"
+        default: "C:\\Users\\gflemmin\\Compuware\\Workbench\\workspaceV20.13\\CLITESTS\\Tests\\Scenarios"
         required: true
       workspace:
         # Workspcae location of the customer input from the user.
         description: Customized Workspace
-        default: "C:\\Users\\aasati\\git\\TTT\\work\\workspace\\Security_Vulnerability\\TopazCliWkspc"
+        default: "C:\\Users\\gflemmin\\E\\CLIBUILDS\\CLI20.13.1129"
         required: true        
       repository_server:
         # repository server input from the user.
@@ -54,5 +54,5 @@ jobs:
     #  - run: git config --global core.longpaths true     
       # Runs a single command using the runners shell
       - name: Calling the CLI function
-        run: C:\\CLIBUILDS\\20.13.1GA\\TotalTestFTCLI.bat -data "${{ inputs.workspace }}" -host "${{ inputs.hciconnection }}" -port "${{ inputs.port }}" -u "${{ inputs.userId }}" -p "${{ inputs.password }}" -s "${{ inputs.repository_server }}" -cesu "${{ inputs.userId }}" -cesp "${{ inputs.password }}" -f "${{ inputs.testFolderPath }}" -R -G -v "6" -l "jenkins" -loglevel "info"
+        run: C:\\Users\\gflemmin\\E\\CLIBUILDS\\CLI20.13.1129\\TotalTestFTCLI.bat -data "${{ inputs.workspace }}" -host "${{ inputs.hciconnection }}" -port "${{ inputs.port }}" -u "${{ inputs.userId }}" -p "${{ inputs.password }}" -s "${{ inputs.repository_server }}" -cesu "${{ inputs.userId }}" -cesp "${{ inputs.password }}" -f "${{ inputs.testFolderPath }}" -R -G -v "6" -l "jenkins" -loglevel "info"
      
