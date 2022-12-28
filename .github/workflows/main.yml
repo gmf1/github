@@ -9,7 +9,7 @@ on:
       hciconnection:
         # Host/IP adress input from users
         description: HCI Connection
-        default: "CW13.bmc.com"
+        default: "CW01.bmc.com"
         required: true
       port:
         # passticket input from the user.
@@ -54,5 +54,5 @@ jobs:
     #  - run: git config --global core.longpaths true     
       # Runs a single command using the runners shell
       - name: Calling the CLI function
-        run: C:\\Users\\gflemmin\\E\\CLIBUILDS\\CLI20.13.1129\\TotalTestFTCLI.bat -data "${{ inputs.workspace }}" -host "${{ inputs.hciconnection }}" -port "${{ inputs.port }}" -u "${{ inputs.userId }}" -p "${{ inputs.password }}" -s "${{ inputs.repository_server }}" -cesu "${{ inputs.userId }}" -cesp "${{ inputs.password }}" -f "${{ inputs.testFolderPath }}" -R -G -v "6" -l "jenkins" -loglevel "info"
+        run: C:\\CLIBUILDS\\20.13.1\\TotalTestFTCLI.bat -data "${{ inputs.workspace }}" -host "${{ inputs.hciconnection }}" -port "${{ inputs.port }}" -u "${{ inputs.userId }}" -p "${{ inputs.password }}" -s "${{ inputs.repository_server }}" -cesu "${{ inputs.userId }}" -cesp "${{ inputs.password }}" -f "${{ inputs.testFolderPath }}" -R -G -v "6" -l "jenkins" -loglevel "info"
      
