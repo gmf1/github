@@ -24,7 +24,7 @@ on:
       workspace:
         # Workspcae location of the customer input from the user.
         description: Customized Workspace
-        default: "C:\\Users\\gflemmin\\E\\CLIBUILDS\\CLI20.13.1129"
+        default: "C:\\CLIBUILDS\\20.13.1\\workspace\\configuration"
         required: true        
       repository_server:
         # repository server input from the user.
