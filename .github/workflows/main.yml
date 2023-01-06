@@ -9,7 +9,7 @@ on:
       clipath:
         # Host/IP adress input from users
         description: CLI Execution path
-        default: "C:\\CLIBUILDS\\20.13.1"
+        default: "C:\\CLIBUILDS\\20.13.1\\"
         required: true
       hciconnection:
         # Host/IP adress input from users
