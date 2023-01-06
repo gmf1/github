@@ -53,7 +53,7 @@ jobs:
     #runs-on: windows-latest
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - run: git config --global core.longpaths true     
+    #  - run: git config --global core.longpaths true     
       # Runs a single command using the runners shell
       - run: echo "${{ secrets.HCI_PASSWORD }}"
       - name: Calling the CLI function
