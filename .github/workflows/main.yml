@@ -9,37 +9,37 @@ on:
       clipath:
         # Host/IP adress input from users
         description: CLI Execution path
-        default: ""
+        default: "C:\CLIBUILDS\20.13.1"
         required: true
       hciconnection:
         # Host/IP adress input from users
         description: HCI Connection
-        default: ""
+        default: "CW01.BMC.COM"
         required: true
       port:
         # passticket input from the user.
         description: Port
-        default: ""
+        default: "16196"
         required: true
       testFolderPath:
         # passticket input from the user.
         description: Test Location Path
-        default: ""
+        default: "C:\Users\gflemmin\Compuware\Workbench\workspaceV20.13\CLITESTS\Tests\Scenarios"
         required: true
       workspace:
         # Workspcae location of the customer input from the user.
         description: CLI path
-        default: ""
+        default: "C:\CLIBUILDS\20.13.1\workspace\configuration"
         required: true        
       repository_server:
         # repository server input from the user.
         description: Repository Server
-        default: ""
+        default: "http://vw-dtw-xat-01.adprod.bmc.com:48231/totaltestapi/"
         required: true
       userId:
         # repository server input from the user.
         description: HCI User ID
-        default: ""
+        default: "pfhgmf0"
         required: true
         
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
