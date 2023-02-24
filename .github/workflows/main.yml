@@ -9,12 +9,12 @@ on:
       clipath:
         # Host/IP adress input from users
         description: CLI Execution path
-        default: "C:\\CLIBUILDS\\20.13.1\\"
+        default: "C:\\CLIBUILDS\\20.13.3ga\\"
         required: true
       hciconnection:
         # Host/IP adress input from users
         description: HCI Connection
-        default: "CW01.BMC.COM"
+        default: "cw01.bmc.com"
         required: true
       port:
         # passticket input from the user.
@@ -29,7 +29,7 @@ on:
       workspace:
         # Workspcae location of the customer input from the user.
         description: CLI path
-        default: "C:\\CLIBUILDS\\20.13.1\\workspace\\configuration"
+        default: "C:\\CLIBUILDS\\20.13.3ga\\workspace\\configuration"
         required: true        
       repository_server:
         # repository server input from the user.
